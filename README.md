@@ -1,153 +1,107 @@
-<a name="readme-top"></a>
-<div align="center">
-  <h1><b>Task Master App</b></h1>
-</div>
+# Task Management System
 
-<!-- TABLE OF CONTENTS -->
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-# 📗 Table of Contents
+## Introduction
+This Task Management System is a robust web application built using **React** and **Redux**. It provides users with the ability to create, edit, and manage tasks efficiently. The application focuses on maintaining a simple and clean user experience for better productivity.
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 Task Master App](#-task-master-app)
-  - [🛠 Built With](#-built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [💻 Getting Started](#-getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-  - [👥 Author](#author)
- 
+## Features
+- Add new tasks with ease
+- Edit and update existing tasks
+- Mark tasks as completed
+- Filter tasks based on status (All, Completed, Pending)
+- Persistent state management with Redux
 
-<!-- PROJECT DESCRIPTION -->
+## Installation
+To set up the project locally, follow these steps:
 
-# 📖 Task Master App
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ms-Ngari/task-management-system.git
+   ```
 
-Task Master is a powerful task management application designed to streamline your daily productivity. Whether you're organizing personal projects, managing work tasks, or planning events, Task Master provides you with the tools you need to stay organized and focused.
+2. Navigate to the project directory:
+   ```bash
+   cd task-management-system
+   ```
 
-## 🛠 Built With
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- React
-- Redux
-- Redux Toolkit
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### Tech Stack
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
-<details>
-  <summary>Language</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React</a></li>
-  </ul>
-</details>
+## Usage
+1. Open the application in your web browser.
+2. Add tasks using the input form.
+3. Use the filters to view tasks by status.
+4. Click on a task to mark it as completed or edit its details.
 
-<details>
-  <summary>State Management</summary>
-  <ul>
-    <li><a href="https://redux.js.org/">Redux</a></li>
-    <li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-
-### Key Features
-
-- **Intuitive Interface**: Task Master offers a clean and intuitive user interface, making it easy to navigate and use for users of all experience levels.
-- **Task Creation and Editing**: Quickly create tasks . Easily edit tasks to keep your information up to date when you don't need it you can simply delete it.
-
-## 💻 Getting Started
-
-To get a local copy up and running, follow these steps:
-
-### Prerequisites
-
-In order to run this project, you need:
-
-- Node.js
-- npm or yarn
-
-### Setup
-
-Clone this repository to your desired folder:
-
-```sh
- git clone https://github.com/your-username/task-master-app.git
-
-
-### Install
-
-Install this project with:
-
-
-```sh
-  cd Recipe-App
-  npm i
+## Project Structure
+```
+.
+├── public
+├── src
+│   ├── components
+│   ├── features
+│   │   └── tasks
+│   ├── store
+│   ├── App.js
+│   └── index.js
+└── package.json
 ```
 
-### Usage
+- **components/**: Reusable UI components.
+- **features/**: Redux slices and business logic.
+- **store/**: Configuration for the Redux store.
+- **App.js**: Main application component.
+- **index.js**: Entry point of the application.
 
-To run the project, execute the following command:
+## Available Scripts
+In the project directory, you can run:
 
-```sh
-  npm start
-```
-Open the following ing in your web browser `http://localhost:3000`
+### `npm start`
+Runs the app in the development mode.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### `npm test`
+Launches the test runner.
 
-## 🔗 Live Demo
-- click here: [Live demo]()
-<!-- AUTHORS -->
+### `npm run build`
+Builds the app for production.
 
-## 👥 Author <a name="authors"></a>
+### `npm run eject`
+Ejects the project configuration (use with caution).
 
-👤 **Zabih Noori**
+## Technologies Used
+- **React**: Frontend framework
+- **Redux**: State management
+- **Redux Toolkit**: Simplified Redux setup
+- **React Router**: Navigation management
+- **CSS Modules/Tailwind**: Styling
 
-- GitHub: [Zabih noori ](https://github.com/ZabihullahNooriWardak)
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch-name`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch-name`).
+5. Open a pull request.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Adding priority based management]**
-- [ ] **[ Solution for persisted storage ]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/Estete9/recipes-app/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project coomment or send it a star
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Nirmal Joshi for Teaching redux and redux-toolkit
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
